@@ -1,0 +1,658 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*estilos del body*/
+
+body{
+    background-color: rgb(176, 176, 176);
+    font-family: 'Roboto', sans-serif;
+
+} 
+
+
+
+
+/*estilos del header*/
+header{grid-area: header;
+    background-color:#cac2a8;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    
+   
+}
+
+.logo{
+    padding: 1rem;
+}
+h1{
+    padding: 1rem;
+}
+
+nav ul  {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    
+    text-shadow: 5px 5px 10px;
+    color: whitesmoke;
+
+
+}
+
+
+
+
+nav ul li:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*estilos del */
+
+.main-index{grid-area:main-index;
+    
+    height: 500px;
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+   , rgba(0,0,0,0.5) ) 
+    ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    background-position: center;
+    
+}
+
+ h1{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    font-size: 3rem;
+    
+    
+    
+}
+
+/*estilos de section*/
+    
+section{grid-area: section;
+    background-color:#cac2a8;
+    height: 400px;
+
+    
+
+}
+
+.int-section{
+  background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+  , rgba(0,0,0,0.5) ) , url(../img/ropa\ masculina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+    height: 100%;
+    margin: 5px;
+    
+
+}
+
+
+.section-dos{grid-area: section-dos;
+    background-color: #cac2a8;
+    height: 400px;
+}
+
+.int-section-dos{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+    , rgba(0,0,0,0.5) ) , url(../img/ropa\ mujeres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+      height: 100%;
+      margin: 5px;
+      
+  
+  }
+  section h2{
+    
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    font-size: 2rem;
+
+  }
+
+  /*estilos del footer*/
+
+footer{grid-area: footer;
+    background-color: #cac2a8;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    display: none;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+footer h3{
+    font-size: 1.2rem;
+}
+
+.redesSociales{
+    margin: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+ color: white;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+/*mq mobile*/
+
+@media screen and (min-width:380px){
+    
+   
+
+    .contenedor{
+        display: grid;
+     grid-template-areas:
+    "header header header header" 
+    "main-index main-index main-index main-index       "
+    "section section section section  "
+    "section-dos section-dos section-dos section-dos  "
+    "footer footer footer footer"
+    ;
+     }
+
+     .contenedor-hombres{
+   
+        display: grid;
+       
+        grid-template-areas:
+        "header header header header" 
+        "main-hombres main-hombres main-hombres main-hombres "
+        "footer footer footer footer" 
+        ;
+}
+.contenedor-contacto{
+   
+    display: grid;
+    grid-template-areas:
+    "header header header header" 
+    " main-contacto main-contacto main-contacto main-contacto " 
+    "footer footer footer footer" 
+    ;
+}
+.contenedor-productos{
+   
+    display: grid;
+ 
+    grid-template-areas:
+    "header header header header" 
+    "main-productos main-productos main-productos main-productos "
+    "section-productos section-productos section-productos section-productos" 
+    "footer footer footer footer" 
+    ;
+}
+
+
+
+     /*estilos bootstrap*/
+
+     .estilo-general{
+        padding: 2rem;
+    }
+
+    
+
+    .estilo-botones{
+   
+        color: rgb(4, 4, 4,0.5);
+        font-size: 1;
+        background-color: aliceblue;
+        border-radius: 10%;
+       
+       
+    }
+
+    .estilo-botones:hover{
+        color: black;
+    }
+    
+}
+ 
+/*mq desktop*/
+
+@media screen and (min-width:960px){
+
+   
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:
+        "header header header header" 
+        " main-index main-index main-index main-index     " 
+        "section section section-dos section-dos" 
+        "footer footer footer footer" 
+        ;
+      
+        
+        
+    
+    }
+    .contenedor-hombres{
+     display: grid;
+        
+        grid-template-areas: 
+        "header header header header" 
+        "main-hombres main-hombres main-hombres main-hombres "
+        
+        "footer footer footer footer" 
+        ;
+}
+.contenedor-contacto{
+   
+    display: grid;
+ 
+    grid-template-areas:
+    "header header header header" 
+    "main-contacto main-contacto main-contacto main-contacto " 
+    "footer footer footer footer" 
+    ;
+}
+
+.contenedor-productos{
+   
+    display: grid;
+ 
+    grid-template-areas:
+    "header header header header" 
+    "main-productos main-productos main-productos main-productos "
+    "section-productos section-productos section-productos section-productos" 
+    "footer footer footer footer" 
+    ;
+}
+
+
+    header{
+        display: flex;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    footer{
+        display: flex;
+    }
+
+      /*estilos bootstrap*/
+
+    .estilo-general{
+        padding: 0;
+    }
+
+    .estilo-botones{
+   
+        color: rgb(255, 255, 255);
+        padding: 0;
+        font-size: 1.3rem;
+        background-color: #cac2a8;
+    
+       
+    }
+}
+
+
+
+
+/*estilo html hombres*/
+
+
+.contenedor-cartas{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin:3rem 7rem 3rem;
+    gap: 3rem;
+    
+    
+    
+}
+
+
+
+.carta{
+    background-color: #90a0a0;
+    display: flex;
+    display: inline;
+    height: 400px;
+    width:20rem;
+   text-align: center;
+   
+   box-shadow: 2px 2px 5px;
+   
+  
+}
+
+.carta-baja{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    display: block;
+    height: 400px;
+    width:20rem;
+   text-align: center;
+
+   box-shadow: 2px 2px 5px;
+ 
+   
+}
+
+.carta-uno{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/ropa\ hombres\ 1.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.carta-dos{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/ropa\ hombres\ 2.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+
+
+.carta-tres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/ropa\ hombres\ 3.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.carta-cuatro{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/trajes-para-hombre-colores-para-demostrar-seguridad-y-exito-gris.webp);
+     background-size: cover;
+     background-position:unset;
+    
+     
+}
+
+.carta-cinco{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/trajes\ 5.webp);
+     background-size: cover;
+     background-position:unset;
+     background-position: center;
+     
+}
+
+.carta-seis{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/trajes\ 5.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+
+
+
+
+
+.carta-uno-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 1.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.carta-dos-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 2.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+
+
+.carta-tres-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 3.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.carta-cuatro-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 5.webp);
+     background-size: cover;
+     background-position:unset;
+    
+     
+}
+
+.carta-cinco-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 4.jpeg);
+     background-size: cover;
+     background-position:unset;
+     background-position: center;
+     
+}
+
+.carta-seis-mujeres{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/mujeres\ 6.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.main-hombres{
+    grid-area: main-hombres;
+    background-color: #d8cabc;
+   
+    
+}
+
+.section-hombres{
+    grid-area: section-hombres;
+    
+}
+
+
+.nombre{
+    font-size: 1.5rem;
+}
+
+/*estilo html productos*/
+.contenedor-productos{
+    grid-area: contenedor-productos;
+}
+.main-productos{
+    grid-area: main-productos;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.section-productos{
+    height: 500px;
+    grid-area: section-productos;
+    background-color: #cac2a8;
+}
+.contenedor-carrusel{
+    height: 100vh;
+    width: 100vw;
+
+
+  
+}
+
+.img-carrusel-1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/carrusel\ 1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-carrusel-2{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/carrusel\ 2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-carrusel-3{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/carrusel\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carta-uno-productos{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/relojes.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+.carta-dos-productos{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/cartera\ 1.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+
+
+.carta-tres-productos{
+    
+    width: 20rem;
+    height: 300px;
+    box-shadow: 2px 2px 5px;
+     background-image: url(../img/sombreros.jpg);
+     background-size: cover;
+     background-position:unset;
+     
+}
+
+
+/*html contacto*/
+
+.main-contacto{
+    grid-area: main-contacto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8cabc;
+}
+
+.form-contacto{
+
+    width: 30em;
+    height: 20em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%
+
+    
+}
+
+
+/*logo whatsapp*/
+
+.botonWhatsapp{
+    position: fixed;
+    right: 30px;
+    border-radius: 50px;
+    bottom: 30px;
+    font-size: 30px ;
+    box-shadow: 0px 2px 3px;
+    margin: 0px 0px 100px;
+} 
+    
+.botonWhatsapp:hover{
+    color: white;
+}
