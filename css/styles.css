@@ -11,11 +11,12 @@
 
 /*estilos del body*/
 body {
-  background-color: #b0b0b0;
+  background-color: #cac2a8;
   font-family: 'Roboto', sans-serif; }
 
 /*estilos del header*/
 .contenedor {
+  height: 100vh;
   /*estilos de section*/ }
   .contenedor header {
     grid-area: header;
@@ -110,96 +111,95 @@ body {
     .contenedor footer li {
       list-style: none; }
 
-.contenedor-hombres header {
-  grid-area: header;
-  background-color: #cac2a8;
-  width: 100vw;
-  justify-content: space-between;
-  display: flex; }
-  .contenedor-hombres header .logo {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    width: 100px;
-    height: 100px; }
-  .contenedor-hombres header nav ul {
-    gap: 2rem;
-    padding: 2rem;
-    text-shadow: 5px 5px 10px;
-    color: whitesmoke; }
-    .contenedor-hombres header nav ul li:hover {
-      color: black; }
-
-.contenedor-hombres .main-hombres {
-  grid-area: main-hombres;
-  background-color: #d8cabc; }
-  .contenedor-hombres .main-hombres .contenedor-cartas {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-    margin: 0rem 0rem 0rem 6rem;
-    gap: 3rem; }
-    .contenedor-hombres .main-hombres .contenedor-cartas .carta {
-      background-color: #90a0a0;
+.contenedor-hombres {
+  height: 100vh;
+  width: 100vw; }
+  .contenedor-hombres header {
+    grid-area: header;
+    background-color: #cac2a8;
+    width: vw;
+    justify-content: space-between;
+    display: flex; }
+    .contenedor-hombres header .logo {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      width: 100px;
+      height: 100px; }
+    .contenedor-hombres header nav ul {
+      gap: 2rem;
+      padding: 2rem;
+      text-shadow: 5px 5px 10px;
+      color: whitesmoke; }
+      .contenedor-hombres header nav ul li:hover {
+        color: black; }
+  .contenedor-hombres .main-hombres {
+    grid-area: main-hombres;
+    background-color: #d8cabc; }
+    .contenedor-hombres .main-hombres .contenedor-cartas {
       display: flex;
-      display: inline;
-      width: 20rem;
-      height: 400px;
-      text-align: center;
-      box-shadow: 2px 2px 5px; }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-uno {
+      flex-wrap: wrap;
+      gap: 1rem; }
+      .contenedor-hombres .main-hombres .contenedor-cartas .carta {
+        background-color: #90a0a0;
+        display: flex;
+        display: inline;
         width: 20rem;
-        height: 300px;
-        background-image: url(../img/ropahombres1.jpg); }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-dos {
-        width: 20rem;
-        height: 300px;
-        background-image: url(../img/ropahombres2.jpg); }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-tres {
-        width: 20rem;
-        height: 300px;
-        background-image: url(../img/ropahombres3.jpg); }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-cuatro {
-        width: 20rem;
-        height: 300px;
-        background-image: url(../img/traje4.webp); }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-cinco {
-        width: 20rem;
-        height: 300px;
-        background-image: url(../img/trajes5.jpg); }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-seis {
-        width: 20rem;
-        height: 300px;
-        background-image: url(../img/trajes5.webp);
-        background-position: center; }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .nombre {
-        font-size: 1.5rem;
-        color: whitesmoke; }
-      .contenedor-hombres .main-hombres .contenedor-cartas .carta .precio {
-        color: black;
-        font-size: 1.2rem; }
-
-.contenedor-hombres footer {
-  grid-area: footer;
-  background-color: #cac2a8;
-  height: 150px;
-  text-align: center;
-  display: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  font-size: 0.8rem;
-  font-family: 'Roboto', sans-serif; }
-  .contenedor-hombres footer footer h3 {
-    font-size: 1.2rem; }
-  .contenedor-hombres footer .redesSociales {
-    margin: 0.5rem; }
-  .contenedor-hombres footer a {
-    text-decoration: none;
-    color: black; }
-  .contenedor-hombres footer a:hover {
-    color: white; }
-  .contenedor-hombres footer li {
-    list-style: none; }
+        height: 400px;
+        text-align: center;
+        box-shadow: 2px 2px 5px; }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-uno {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/ropahombres1.jpg); }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-dos {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/ropahombres2.jpg); }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-tres {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/ropahombres3.jpg); }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-cuatro {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/traje4.webp); }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-cinco {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/trajes5.jpg); }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .carta-seis {
+          width: 20rem;
+          height: 300px;
+          background-image: url(../img/trajes5.webp);
+          background-position: center; }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .nombre {
+          font-size: 1.5rem;
+          color: whitesmoke; }
+        .contenedor-hombres .main-hombres .contenedor-cartas .carta .precio {
+          color: black;
+          font-size: 1.2rem; }
+  .contenedor-hombres footer {
+    grid-area: footer;
+    background-color: #cac2a8;
+    height: 150px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif; }
+    .contenedor-hombres footer footer h3 {
+      font-size: 1.2rem; }
+    .contenedor-hombres footer .redesSociales {
+      margin: 0.5rem; }
+    .contenedor-hombres footer a {
+      text-decoration: none;
+      color: black; }
+    .contenedor-hombres footer a:hover {
+      color: white; }
+    .contenedor-hombres footer li {
+      list-style: none; }
 
 .carta-uno-mujeres {
   width: 20rem;
@@ -287,7 +287,8 @@ body {
 .section-productos {
   grid-area: section-productos;
   background-color: #dcd8cb;
-  width: 100vw; }
+  width: 100vw;
+  display: none; }
   .section-productos .contenedor-cartas {
     display: flex;
     padding-top: 3rem;
@@ -362,7 +363,7 @@ footer {
 
 .contenedor-contacto .main-contacto {
   grid-area: main-contacto;
-  height: 500px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,7 +424,12 @@ footer {
     display: grid;
     grid-template-areas: "header  header header header" " main-productos main-productos  main-productos  main-productos " "footer footer footer footer"; }
   .contenedor-contacto footer {
-    display: none; } }
+    display: none; }
+  .contenedor-cartas {
+    margin: 0rem; }
+  .carta {
+    width: 20rem;
+    height: 200px; } }
 
 @media screen and (min-width: 960px) {
   footer {
@@ -431,6 +437,12 @@ footer {
   .contenedor-contacto footer {
     display: flex; }
   .contenedor-hombres footer {
+    display: flex; }
+  .contenedor-cartas {
+    padding: 2rem;
+    width: auto;
+    margin: 0rem 0rem 0rem 6rem; }
+  .section-productos {
     display: flex; } }
 
 @media screen and (min-width: 600px) and (max-width: 960px) {

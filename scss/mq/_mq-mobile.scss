@@ -23,6 +23,7 @@
    
    header{
     flex-direction: column;
+    
 }
 
 .section-dos{
@@ -57,6 +58,16 @@
         display: none;
     }
 }
+
+.contenedor-cartas{
+    margin:0rem;
+}
+
+
+.carta{
+    @include medidas(20rem,200px);
+}
+
 
 }
 

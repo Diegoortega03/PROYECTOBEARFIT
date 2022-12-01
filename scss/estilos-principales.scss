@@ -8,7 +8,7 @@
 /*estilos del body*/
 
 body{
-    background-color: rgb(176, 176, 176);
+    background-color: $color-principal;
     font-family: 'Roboto', sans-serif;
 
 } 
@@ -16,6 +16,8 @@ body{
 /*estilos del header*/
 
 .contenedor{
+
+    height: 100vh;
 
 
 
