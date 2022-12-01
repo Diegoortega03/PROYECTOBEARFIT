@@ -69,7 +69,8 @@ header{
     ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
     background-position: center;
 
-    h1{
+    .texto{
+        text-decoration: none;
         color: whitesmoke;
     display: flex;
     align-items: center;
@@ -97,7 +98,8 @@ section{grid-area: section;
           height: 100%;
           margin: 5px;
 
-          h2{
+            .texto{
+            text-decoration: none;
             color: whitesmoke;
     display: flex;
     align-items: center;
@@ -127,7 +129,8 @@ section{grid-area: section;
           height: 100%;
           margin: 5px;
           
-          h2{
+          .texto{
+            text-decoration: none;
             color: whitesmoke;
     display: flex;
     align-items: center;
