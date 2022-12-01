@@ -1,0 +1,58 @@
+
+
+.carta-uno-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-uno.jpg);
+     background-position:unset;
+     
+}
+
+.carta-dos-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-dos.jpg);
+     background-position:unset;
+     
+}
+
+
+
+.carta-tres-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-tres.jpg);
+     background-position:unset;
+     
+}
+
+.carta-cuatro-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-cuatro.jpeg);
+    background-position:unset;
+    
+     
+}
+
+.carta-cinco-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-cinco.webp);
+     background-position: center;
+     
+}
+
+.carta-seis-mujeres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/mujeres-seis.jpg);
+    
+     
+}

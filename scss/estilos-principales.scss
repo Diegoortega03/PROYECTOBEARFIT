@@ -1,0 +1,178 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos del body*/
+
+body{
+    background-color: rgb(176, 176, 176);
+    font-family: 'Roboto', sans-serif;
+
+} 
+
+/*estilos del header*/
+
+.contenedor{
+
+
+
+header{
+    grid-area:header;
+    background-color:$color-principal ;
+    width: 100vw;
+    justify-content:space-between ;
+    display: flex;
+  
+   
+    
+    .logo{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        @include medidas(100px,100px);
+    }
+
+    nav {
+    
+        ul{
+          
+            gap: 2rem;
+            padding: 2rem;
+            
+            text-shadow: 5px 5px 10px;
+            color: whitesmoke;
+            
+
+            
+
+            li:hover{
+                color: rgb(0, 0, 0);
+
+            }
+        }
+    }
+    
+    
+}
+
+.main-index{
+    grid-area:main-index;
+    
+    height: 500px;
+    width: 100vw;
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+   , rgba(0,0,0,0.5) ) 
+    ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    background-position: center;
+
+    h1{
+        color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    font-size: 3rem; 
+    }
+   
+}
+
+/*estilos de section*/
+
+
+section{grid-area: section;
+    background-color:#cac2a8;
+    height: 400px;
+
+    .int-section{
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+        , rgba(0,0,0,0.5) ) , url(../img/ropamasculina.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+          height: 100%;
+          margin: 5px;
+
+          h2{
+            color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    font-size: 2rem;
+          }
+          
+      
+      }
+    
+    
+
+}
+
+.section-dos{grid-area: section-dos;
+    background-color: #cac2a8;
+    height: 400px;
+
+    .int-section-dos{
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+        , rgba(0,0,0,0.5) ) , url(../img/ropamujeres.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+          height: 100%;
+          margin: 5px;
+          
+          h2{
+            color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    font-size: 2rem;
+          }
+      
+      }
+}
+
+footer{grid-area: footer;
+    background-color: #cac2a8;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    
+
+    footer h3{
+        font-size: 1.2rem;
+    }
+    
+    .redesSociales{
+        margin: 0.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        color: white;
+       }
+
+    li{
+        list-style: none;
+    }
+    
+    
+
+}
+
+}

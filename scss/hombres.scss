@@ -1,0 +1,181 @@
+
+
+.contenedor-hombres{
+
+    header{
+        grid-area:header;
+        background-color:$color-principal ;
+        width: 100vw;
+        justify-content:space-between ;
+        display: flex;
+      
+       
+        
+        .logo{
+            margin-top: 2rem;
+            margin-left: 2rem;
+            @include medidas(100px,100px);
+        }
+    
+        nav {
+        
+            ul{
+              
+                gap: 2rem;
+                padding: 2rem;
+                
+                text-shadow: 5px 5px 10px;
+                color: whitesmoke;
+                
+    
+                
+    
+                li:hover{
+                    color: rgb(0, 0, 0);
+    
+                }
+            }
+        }
+        
+        
+    }
+
+
+
+.main-hombres{
+    grid-area: main-hombres;
+    background-color: #d8cabc;
+
+    
+.contenedor-cartas{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin:0rem 0rem 0rem 6rem;
+    gap: 3rem;
+
+    
+    
+.carta{
+    background-color:$color-cartas;
+    display: flex;
+    display: inline;
+    @include medidas(20rem,400px);
+   text-align: center;
+   
+   box-shadow: 2px 2px 5px;
+   
+   .carta-uno{
+
+    @extend %estilosCartas;
+    @include medidas(20rem,300px);
+    background-image: url(../img/ropahombres1.jpg);
+     
+     
+}
+
+
+.carta-dos{
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/ropahombres2.jpg);
+    
+     
+}
+
+
+.carta-tres{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/ropahombres3.jpg);
+    
+     
+}
+
+.carta-cuatro{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/traje4.webp);
+     
+    
+     
+}
+
+.carta-cinco{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/trajes5.jpg);
+  
+     
+}
+
+.carta-seis{
+    
+    @include medidas(20rem,300px);
+    @extend %estilosCartas;
+     background-image: url(../img/trajes5.webp);
+     background-position: center;
+     
+}
+
+.nombre{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.precio{
+   color:$color-fuente;
+   font-size: 1.2rem;
+}
+
+
+   
+    
+}
+}
+
+}
+
+footer{grid-area: footer;
+    background-color: #cac2a8;
+    height: 150px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    
+
+    footer h3{
+        font-size: 1.2rem;
+    }
+    
+    .redesSociales{
+        margin: 0.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        color: white;
+       }
+
+    li{
+        list-style: none;
+    }
+    
+    
+
+}
+
+}
+

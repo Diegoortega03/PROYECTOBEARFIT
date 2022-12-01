@@ -1,0 +1,117 @@
+.contenedor-contacto{
+
+
+    
+    header{
+        grid-area:header;
+        background-color:$color-principal ;
+        width: 100vw;
+        justify-content:space-between ;
+        display: flex;
+      
+       
+        
+        .logo{
+            margin-top: 2rem;
+            margin-left: 2rem;
+            @include medidas(100px,100px);
+        }
+    
+        nav {
+        
+            ul{
+              
+                gap: 2rem;
+                padding: 2rem;
+                
+                text-shadow: 5px 5px 10px;
+                color: whitesmoke;
+                
+    
+                
+    
+                li:hover{
+                    color: rgb(0, 0, 0);
+    
+                }
+            }
+        }
+        
+        
+    }
+    .main-contacto{
+        grid-area: main-contacto;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d8cabc;
+
+        .form-contacto{
+
+            width: 30em;
+            height: 20em;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5%
+        
+
+            
+            
+        }
+
+        .botonWhatsapp{
+            position: fixed;
+            right: 30px;
+            border-radius: 50px;
+            bottom: 30px;
+            font-size: 30px ;
+            box-shadow: 0px 2px 3px;
+            margin: 0px 0px 100px;
+        } 
+            
+        .botonWhatsapp:hover{
+            color: white;
+        }
+        
+    }
+
+    
+    footer{grid-area: footer;
+        background-color: #cac2a8;
+        height: 150px;
+        text-align: center;
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        font-size: 0.8rem;
+        font-family: 'Roboto', sans-serif;
+        
+    
+        footer h3{
+            font-size: 1.2rem;
+        }
+        
+        .redesSociales{
+            margin: 0.5rem;
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    
+        a:hover{
+            color: white;
+           }
+    
+        li{
+            list-style: none;
+        }
+        
+        
+     
+    }
+
+   
+}

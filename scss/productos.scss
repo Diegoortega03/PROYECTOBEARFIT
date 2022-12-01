@@ -1,0 +1,213 @@
+
+
+.contenedor-productos{
+    grid-area: contenedor-productos;
+
+            
+    header{
+        grid-area:header;
+        background-color:$color-principal ;
+        width: 100vw;
+        justify-content:space-between ;
+        display: flex;
+      
+       
+        
+        .logo{
+            margin-top: 2rem;
+            margin-left: 2rem;
+            @include medidas(100px,100px);
+        }
+    
+        nav {
+        
+            ul{
+              
+                gap: 2rem;
+                padding: 2rem;
+                
+                text-shadow: 5px 5px 10px;
+                color: whitesmoke;
+                
+    
+                
+    
+                li:hover{
+                    color: rgb(0, 0, 0);
+    
+                }
+            }
+        }
+        
+        
+    }
+    
+    
+
+    .main-productos{
+        grid-area: main-productos;
+        background-color: $color-principal;
+       
+        
+        .contenedor-carrusel{
+            height: 100vh;
+            width: 100vw;
+        
+            .img-carrusel-1{
+                height: 100vh;
+                width: 100vw;
+                background-image: url(../img/carrusel-uno.webp);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        
+        .img-carrusel-2{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../img/carrusel-tres.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+          
+        .img-carrusel-3{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(../img/carrusel-cuatro.webp);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+        }
+        }
+
+        
+        
+    
+        
+    }
+    .section-productos{
+    
+        grid-area: section-productos;
+        background-color: $color-secundario;
+        width: 100vw;
+      
+
+        
+    .contenedor-cartas{
+
+    display: flex;
+    padding-top: 3rem;
+    margin:0rem 0rem 0rem 8rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+       
+    
+    
+    
+    .carta{
+        background-color: $color-cartas;
+        display: flex;
+        display: inline;  
+        height: 400px;
+        width:20rem;
+       text-align: center;
+       box-shadow: 2px 2px 5px;
+       
+
+       
+    .carta-uno-productos{
+    
+        @include medidas(20rem,300px);
+        @extend %estilosCartas;
+         background-image: url(../img/relojes.jpg);
+         background-position:unset;
+       
+        
+         
+    }
+    
+    .carta-dos-productos{
+        
+        @include medidas(20rem,300px);
+        @extend %estilosCartas;
+         background-image: url(../img/cartera-uno.jpg);
+         background-position:unset;
+         
+    }
+    
+    
+    
+    .carta-tres-productos{
+        
+        @include medidas(20rem,300px);
+        @extend %estilosCartas;
+         background-image: url(../img/sombreros.jpg);
+         background-position:unset;
+         
+    }
+      
+    }
+    
+    
+    
+    }
+
+
+    
+
+    
+        
+    
+    }
+
+    footer{grid-area: footer;
+        background-color: #cac2a8;
+        height: 150px;
+        text-align: center;
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        font-size: 0.8rem;
+        font-family: 'Roboto', sans-serif;
+        
+        
+    
+        footer h3{
+            font-size: 1.2rem;
+        }
+        
+        .redesSociales{
+            margin: 0.5rem;
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    
+        a:hover{
+            color: white;
+           }
+    
+        li{
+            list-style: none;
+        }
+        
+        
+    
+    }
+    
+
+        
+  
+    
+        
+    
+
+   
+
+  
