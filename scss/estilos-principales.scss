@@ -69,16 +69,20 @@ header{
     ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
     background-position: center;
 
-    .texto{
-        text-decoration: none;
-        color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 60vh;
-    font-size: 3rem; 
+
+    a{  text-decoration: none;
+        h1{
+            
+            color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 60vh;
+        font-size: 3rem; 
+        }
     }
+    
    
 }
 
@@ -97,8 +101,8 @@ section{grid-area: section;
         background-position: center center;
           height: 100%;
           margin: 5px;
-
-            .texto{
+          a{  text-decoration: none;
+            h2{
             text-decoration: none;
             color: whitesmoke;
     display: flex;
@@ -108,7 +112,7 @@ section{grid-area: section;
     height: 60vh;
     font-size: 2rem;
           }
-          
+         }
       
       }
     
@@ -128,8 +132,8 @@ section{grid-area: section;
         background-position: center center;
           height: 100%;
           margin: 5px;
-          
-          .texto{
+          a{  text-decoration: none;
+            h2{
             text-decoration: none;
             color: whitesmoke;
     display: flex;
@@ -139,6 +143,7 @@ section{grid-area: section;
     height: 60vh;
     font-size: 2rem;
           }
+         }
       
       }
 }

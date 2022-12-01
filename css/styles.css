@@ -42,15 +42,16 @@ body {
     width: 100vw;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lovepik-clothing-store-picture_501098957.jpg);
     background-position: center; }
-    .contenedor .main-index .texto {
-      text-decoration: none;
-      color: whitesmoke;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 60vh;
-      font-size: 3rem; }
+    .contenedor .main-index a {
+      text-decoration: none; }
+      .contenedor .main-index a h1 {
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 60vh;
+        font-size: 3rem; }
   .contenedor section {
     grid-area: section;
     background-color: #cac2a8;
@@ -62,15 +63,17 @@ body {
       background-position: center center;
       height: 100%;
       margin: 5px; }
-      .contenedor section .int-section .texto {
-        text-decoration: none;
-        color: whitesmoke;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 60vh;
-        font-size: 2rem; }
+      .contenedor section .int-section a {
+        text-decoration: none; }
+        .contenedor section .int-section a h2 {
+          text-decoration: none;
+          color: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 60vh;
+          font-size: 2rem; }
   .contenedor .section-dos {
     grid-area: section-dos;
     background-color: #cac2a8;
@@ -82,15 +85,17 @@ body {
       background-position: center center;
       height: 100%;
       margin: 5px; }
-      .contenedor .section-dos .int-section-dos .texto {
-        text-decoration: none;
-        color: whitesmoke;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 60vh;
-        font-size: 2rem; }
+      .contenedor .section-dos .int-section-dos a {
+        text-decoration: none; }
+        .contenedor .section-dos .int-section-dos a h2 {
+          text-decoration: none;
+          color: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 60vh;
+          font-size: 2rem; }
   .contenedor footer {
     grid-area: footer;
     background-color: #cac2a8;
