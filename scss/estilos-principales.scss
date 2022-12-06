@@ -64,11 +64,9 @@ header{
     
     height: 500px;
     width: 100vw;
-    background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
-   , rgba(0,0,0,0.5) ) 
-    ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    background-image:url(../img/lovepik-clothing-store-picture_501098957.jpg);
     background-position: center;
-
+     transition: all 300ms;
 
     a{  text-decoration: none;
         h1{
@@ -83,8 +81,17 @@ header{
         }
     }
     
-   
+ 
 }
+
+.main-index:hover{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+    , rgba(0,0,0,0.5) ) ,url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    
+
+    transform: scale(1.1);
+    
+   }
 
 /*estilos de section*/
 
@@ -94,13 +101,13 @@ section{grid-area: section;
     height: 400px;
 
     .int-section{
-        background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
-        , rgba(0,0,0,0.5) ) , url(../img/ropamasculina.jpg);
+        background-image: url(../img/ropamasculina.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
           height: 100%;
           margin: 5px;
+          transition: all 300ms;
           a{  text-decoration: none;
             h2{
             text-decoration: none;
@@ -111,27 +118,33 @@ section{grid-area: section;
     text-align: center;
     height: 60vh;
     font-size: 2rem;
+   
           }
          }
       
       }
     
-    
-
+      .int-section:hover{
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+            , rgba(0,0,0,0.5) ) , url(../img/ropamasculina.jpg);
+            transform: scale(1.1);
+    }
 }
+
+
 
 .section-dos{grid-area: section-dos;
     background-color: #cac2a8;
     height: 400px;
 
     .int-section-dos{
-        background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
-        , rgba(0,0,0,0.5) ) , url(../img/ropamujeres.jpg);
+        background-image:url(../img/ropamujeres.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
           height: 100%;
           margin: 5px;
+          transition: all 300ms;
           a{  text-decoration: none;
             h2{
             text-decoration: none;
@@ -142,11 +155,24 @@ section{grid-area: section;
     text-align: center;
     height: 60vh;
     font-size: 2rem;
+    
           }
          }
       
       }
+     
+      .int-section-dos:hover{background-image:linear-gradient(0deg, rgba(0,0,0,0.5)
+        , rgba(0,0,0,0.5) ) , url(../img/ropamujeres.jpg); 
+        transform: scale(1.1);}
+        
+      
 }
+
+
+
+
+
+
 
 footer{grid-area: footer;
     background-color: #cac2a8;

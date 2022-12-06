@@ -40,8 +40,9 @@ body {
     grid-area: main-index;
     height: 500px;
     width: 100vw;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lovepik-clothing-store-picture_501098957.jpg);
-    background-position: center; }
+    background-image: url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    background-position: center;
+    transition: all 300ms; }
     .contenedor .main-index a {
       text-decoration: none; }
       .contenedor .main-index a h1 {
@@ -52,17 +53,21 @@ body {
         text-align: center;
         height: 60vh;
         font-size: 3rem; }
+  .contenedor .main-index:hover {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lovepik-clothing-store-picture_501098957.jpg);
+    transform: scale(1.1); }
   .contenedor section {
     grid-area: section;
     background-color: #cac2a8;
     height: 400px; }
     .contenedor section .int-section {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ropamasculina.jpg);
+      background-image: url(../img/ropamasculina.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       height: 100%;
-      margin: 5px; }
+      margin: 5px;
+      transition: all 300ms; }
       .contenedor section .int-section a {
         text-decoration: none; }
         .contenedor section .int-section a h2 {
@@ -74,17 +79,21 @@ body {
           text-align: center;
           height: 60vh;
           font-size: 2rem; }
+    .contenedor section .int-section:hover {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ropamasculina.jpg);
+      transform: scale(1.1); }
   .contenedor .section-dos {
     grid-area: section-dos;
     background-color: #cac2a8;
     height: 400px; }
     .contenedor .section-dos .int-section-dos {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ropamujeres.jpg);
+      background-image: url(../img/ropamujeres.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       height: 100%;
-      margin: 5px; }
+      margin: 5px;
+      transition: all 300ms; }
       .contenedor .section-dos .int-section-dos a {
         text-decoration: none; }
         .contenedor .section-dos .int-section-dos a h2 {
@@ -96,6 +105,9 @@ body {
           text-align: center;
           height: 60vh;
           font-size: 2rem; }
+    .contenedor .section-dos .int-section-dos:hover {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ropamujeres.jpg);
+      transform: scale(1.1); }
   .contenedor footer {
     grid-area: footer;
     background-color: #cac2a8;
@@ -451,7 +463,10 @@ footer {
     width: auto;
     margin: 0rem 0rem 0rem 6rem; }
   .section-productos {
-    display: flex; } }
+    display: flex; }
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header  header header header" "main-index  main-index main-index main-index" "section section  section-dos section-dos" "footer footer footer footer"; } }
 
 @media screen and (min-width: 600px) and (max-width: 960px) {
   .contenedor {

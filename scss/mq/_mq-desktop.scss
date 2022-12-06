@@ -31,4 +31,28 @@
     display: flex;
 }
 
+.contenedor{ 
+display: grid;
+grid-template-areas: 
+"header  header header header"
+"main-index  main-index main-index main-index"
+"section section  section-dos section-dos"
+"footer footer footer footer";
+
+.estilo-botones{
+   
+    color: rgb(4, 4, 4,0.5);
+    font-size: 1;
+    background-color: aliceblue;
+    border-radius: 10%;
+   
+   
+}
+ }
+
+
+
+
+
+
 }
