@@ -10,15 +10,19 @@
 body{
     background-color: $color-principal;
     font-family: 'Roboto', sans-serif;
+    
+    
+ 
 
 } 
 
-/*estilos del header*/
+/*estilos del contenedor*/
 
 .contenedor{
 
     height: 100vh;
-
+    width: auto;
+    
 
 
 header{
@@ -39,7 +43,7 @@ header{
     nav {
     
         ul{
-          
+        
             gap: 2rem;
             padding: 2rem;
             
@@ -59,6 +63,11 @@ header{
     
 }
 
+.estilo-general{
+ 
+}
+
+/*estilos del main*/
 .main-index{
     grid-area:main-index;
     
@@ -99,6 +108,7 @@ header{
 section{grid-area: section;
     background-color:#cac2a8;
     height: 400px;
+    
 
     .int-section{
         background-image: url(../img/ropamasculina.jpg);
@@ -136,7 +146,7 @@ section{grid-area: section;
 .section-dos{grid-area: section-dos;
     background-color: #cac2a8;
     height: 400px;
-
+    
     .int-section-dos{
         background-image:url(../img/ropamujeres.jpg);
         background-repeat: no-repeat;
@@ -173,7 +183,7 @@ section{grid-area: section;
 
 
 
-
+/*estilos del footer*/
 footer{grid-area: footer;
     background-color: #cac2a8;
     height: 150px;
@@ -184,15 +194,30 @@ footer{grid-area: footer;
     padding: 20px;
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
+
+
+    .navegacionFooter{
+        margin-top: 0.5rem;
+
+    }
+
+    .redesSociales{
+        margin-top:1rem; }
+        
+
+    .contacto{
+        margin-bottom: 0.5rem;
+    }
+    
     
 
     footer h3{
         font-size: 1.2rem;
     }
-    
-    .redesSociales{
-        margin: 0.5rem;
-    }
+ 
+
+
 
     a{
         text-decoration: none;
@@ -212,3 +237,5 @@ footer{grid-area: footer;
 }
 
 }
+
+
