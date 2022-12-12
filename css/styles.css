@@ -170,7 +170,7 @@ body {
     .contenedor-hombres .main-hombres .contenedor-cartas {
       display: flex;
       flex-wrap: wrap;
-      margin: left 3.5em;
+      margin-left: 3.5rem;
       gap: 1rem; }
       .contenedor-hombres .main-hombres .contenedor-cartas .carta {
         background-color: #90a0a0;
