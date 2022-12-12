@@ -18,6 +18,7 @@ body {
 .contenedor {
   height: 100vh;
   width: auto;
+  overflow-x: hidden;
   /*estilos del main*/
   /*estilos de section*/
   /*estilos del footer*/ }
@@ -141,7 +142,8 @@ body {
 
 .contenedor-hombres {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  overflow-x: hidden; }
   .contenedor-hombres header {
     grid-area: header;
     background-color: #cac2a8;
@@ -162,10 +164,13 @@ body {
         color: black; }
   .contenedor-hombres .main-hombres {
     grid-area: main-hombres;
-    background-color: #d8cabc; }
+    background-color: #d8cabc;
+    display: flex;
+    flex-direction: column; }
     .contenedor-hombres .main-hombres .contenedor-cartas {
       display: flex;
       flex-wrap: wrap;
+      margin: left 3.5em;
       gap: 1rem; }
       .contenedor-hombres .main-hombres .contenedor-cartas .carta {
         background-color: #90a0a0;
@@ -269,7 +274,7 @@ body {
   background-image: url(../img/mujeres-seis.jpg); }
 
 .contenedor-productos {
-  grid-area: contenedor-productos; }
+  overflow-x: hidden; }
   .contenedor-productos header {
     grid-area: header;
     background-color: #cac2a8;
@@ -290,7 +295,8 @@ body {
         color: black; }
   .contenedor-productos .main-productos {
     grid-area: main-productos;
-    background-color: #cac2a8; }
+    background-color: #dcd8cb;
+    width: 100vw; }
     .contenedor-productos .main-productos .contenedor-carrusel {
       height: 100vh;
       width: 100vw; }
@@ -378,78 +384,78 @@ footer {
   footer li {
     list-style: none; }
 
-.contenedor-contacto header {
-  grid-area: header;
-  background-color: #cac2a8;
-  width: 100vw;
-  justify-content: space-between;
-  display: flex; }
-  .contenedor-contacto header .logo {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    width: 100px;
-    height: 100px; }
-  .contenedor-contacto header nav ul {
-    gap: 2rem;
-    padding: 2rem;
-    text-shadow: 5px 5px 10px;
-    color: whitesmoke; }
-    .contenedor-contacto header nav ul li:hover {
-      color: black; }
-
-.contenedor-contacto .main-contacto {
-  grid-area: main-contacto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #d8cabc; }
-  .contenedor-contacto .main-contacto .form-contacto {
-    width: 30em;
-    height: 20em;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5%;
-    padding: 1rem; }
-    .contenedor-contacto .main-contacto .form-contacto .estilo-boton-contacto {
-      background-color: black;
+.contenedor-contacto {
+  overflow-x: hidden; }
+  .contenedor-contacto header {
+    grid-area: header;
+    background-color: #cac2a8;
+    width: 100vw;
+    justify-content: space-between;
+    display: flex; }
+    .contenedor-contacto header .logo {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      width: 100px;
+      height: 100px; }
+    .contenedor-contacto header nav ul {
+      gap: 2rem;
+      padding: 2rem;
+      text-shadow: 5px 5px 10px;
       color: whitesmoke; }
-  .contenedor-contacto .main-contacto .botonWhatsapp {
-    position: fixed;
-    right: 30px;
-    border-radius: 50px;
-    bottom: 30px;
-    font-size: 30px;
-    box-shadow: 0px 2px 3px;
-    margin: 0px 0px 100px; }
-  .contenedor-contacto .main-contacto .botonWhatsapp:hover {
-    color: white; }
-
-.contenedor-contacto footer {
-  grid-area: footer;
-  background-color: #cac2a8;
-  height: 150px;
-  text-align: center;
-  display: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  font-size: 0.8rem;
-  font-family: 'Roboto', sans-serif; }
-  .contenedor-contacto footer footer h3 {
-    font-size: 1.2rem; }
-  .contenedor-contacto footer .navegacionFooter {
-    margin-top: 0.5rem; }
-  .contenedor-contacto footer .redesSociales {
-    margin-top: 1rem; }
-  .contenedor-contacto footer .contacto {
-    margin-bottom: 0.5rem; }
-  .contenedor-contacto footer a {
-    text-decoration: none;
-    color: black; }
-  .contenedor-contacto footer a:hover {
-    color: white; }
-  .contenedor-contacto footer li {
-    list-style: none; }
+      .contenedor-contacto header nav ul li:hover {
+        color: black; }
+  .contenedor-contacto .main-contacto {
+    grid-area: main-contacto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8cabc; }
+    .contenedor-contacto .main-contacto .form-contacto {
+      width: 30em;
+      height: 20em;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5%;
+      padding: 1rem; }
+      .contenedor-contacto .main-contacto .form-contacto .estilo-boton-contacto {
+        background-color: black;
+        color: whitesmoke; }
+    .contenedor-contacto .main-contacto .botonWhatsapp {
+      position: fixed;
+      right: 30px;
+      border-radius: 50px;
+      bottom: 30px;
+      font-size: 30px;
+      box-shadow: 0px 2px 3px;
+      margin: 0px 0px 100px; }
+    .contenedor-contacto .main-contacto .botonWhatsapp:hover {
+      color: white; }
+  .contenedor-contacto footer {
+    grid-area: footer;
+    background-color: #cac2a8;
+    height: 150px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif; }
+    .contenedor-contacto footer footer h3 {
+      font-size: 1.2rem; }
+    .contenedor-contacto footer .navegacionFooter {
+      margin-top: 0.5rem; }
+    .contenedor-contacto footer .redesSociales {
+      margin-top: 1rem; }
+    .contenedor-contacto footer .contacto {
+      margin-bottom: 0.5rem; }
+    .contenedor-contacto footer a {
+      text-decoration: none;
+      color: black; }
+    .contenedor-contacto footer a:hover {
+      color: white; }
+    .contenedor-contacto footer li {
+      list-style: none; }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .contenedor {

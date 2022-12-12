@@ -1,12 +1,10 @@
 
 
 .contenedor-productos{
-    grid-area: contenedor-productos;
-
-            
+    overflow-x: hidden;
     header{
         grid-area:header;
-        background-color:$color-principal ;
+        background-color:$color-principal;
         width: 100vw;
         justify-content:space-between ;
         display: flex;
@@ -46,12 +44,16 @@
 
     .main-productos{
         grid-area: main-productos;
-        background-color: $color-principal;
+        background-color: $color-secundario;
+        width: 100vw;
+        
        
         
         .contenedor-carrusel{
+            
             height: 100vh;
             width: 100vw;
+            
         
             .img-carrusel-1{
                 height: 100vh;

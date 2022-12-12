@@ -3,6 +3,7 @@
 .contenedor-hombres{
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 
     header{
         grid-area:header;
@@ -47,14 +48,16 @@
 .main-hombres{
     grid-area: main-hombres;
     background-color: #d8cabc;
-
+    display: flex;
+    flex-direction: column;
+  
     
 .contenedor-cartas{
 
     display: flex;
     flex-wrap: wrap;
-    
-    gap: 1rem ;
+    margin: left 3.5em;
+    gap: 1rem ; 
 
     
     
@@ -68,7 +71,7 @@
    box-shadow: 2px 2px 5px;
    
    .carta-uno{
-
+    
     @extend %estilosCartas;
     @include medidas(20rem,300px);
     background-image: url(../img/ropahombres1.jpg);
