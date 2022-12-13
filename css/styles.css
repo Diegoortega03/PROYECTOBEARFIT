@@ -117,7 +117,7 @@ body {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
