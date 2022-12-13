@@ -1,9 +1,12 @@
 @media screen and (min-width:960px){
 
-    
+    /*estilos del pie de pagina*/
     footer{
         display: flex;
        }
+
+
+       /*estilo de los contenedores*/
 
     .contenedor-contacto{
         footer{
@@ -27,29 +30,33 @@
         margin: 0rem 0rem 0rem 6rem;
    
 }
+
+.contenedor{ 
+    display: grid;
+    grid-template-areas: 
+    "header  header header header"
+    "main-index  main-index main-index main-index"
+    "section section  section-dos section-dos"
+    "footer footer footer footer";
     
+    .estilo-botones{
+       
+        
+        font-size: 1;
+        border-radius: 10%;
+       
+       
+    }
+     }
+    
+
+     /*estilos de section*/
 
 .section-productos{
     display: flex;
 }
 
-.contenedor{ 
-display: grid;
-grid-template-areas: 
-"header  header header header"
-"main-index  main-index main-index main-index"
-"section section  section-dos section-dos"
-"footer footer footer footer";
 
-.estilo-botones{
-   
-    
-    font-size: 1;
-    border-radius: 10%;
-   
-   
-}
- }
 
 
 

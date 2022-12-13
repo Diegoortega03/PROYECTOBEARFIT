@@ -1,7 +1,7 @@
 @media screen and (min-width:0px) and (max-width:600px){
 
    
-
+    /*esrilos de contenedor*/
     .contenedor{
     
         display: grid;
@@ -12,6 +12,8 @@
         "section-dos section-dos section-dos seection-dos   "
         "footer footer footer footer";
      
+
+    /*pie de pagina*/
         footer{
             display: none;
            }
@@ -26,9 +28,14 @@
     
 }
 
+    /*estilo de section*/
+
 .section-dos{
     width: 100vw;
 }
+
+
+    /*estilo de contenedores*/
 
 .contenedor-hombres{
     

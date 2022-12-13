@@ -1,6 +1,7 @@
 .contenedor-contacto{
    overflow-x: hidden;
 
+   /*estilos del encabezado*/
     
     header{
         grid-area:header;
@@ -39,7 +40,16 @@
         
         
     }
+
+
+    /*estilos del main*/
+
+
     .main-contacto{
+
+        h1{
+            font-size: 1.8rem;
+        }
         grid-area: main-contacto;
         height: 100vh;
         display: flex;
@@ -65,6 +75,9 @@
             
         }
 
+
+    
+
         
 
         .botonWhatsapp{
@@ -83,35 +96,44 @@
         
     }
 
-    
+    /*estilos del pie de pagina*/
+
     footer{grid-area: footer;
         background-color: #cac2a8;
         height: 150px;
         text-align: center;
-        display: none;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 20px;
         font-size: 0.8rem;
         font-family: 'Roboto', sans-serif;
-        
+        width: 100vw;
     
-        footer h3{
-            font-size: 1.2rem;
-        }
-        
+    
         .navegacionFooter{
             margin-top: 0.5rem;
     
         }
     
         .redesSociales{
-            margin-top:1rem; }
+            margin-top:1rem; 
+            
+        }
             
     
         .contacto{
             margin-bottom: 0.5rem;
         }
+        
+        
+    
+        h2{
+            font-size: 1.8rem;
+        }
+     
+    
+    
     
         a{
             text-decoration: none;
@@ -127,8 +149,7 @@
         }
         
         
-     
+    
     }
-
    
 }

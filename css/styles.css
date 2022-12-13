@@ -130,8 +130,8 @@ body {
       margin-top: 1rem; }
     .contenedor footer .contacto {
       margin-bottom: 0.5rem; }
-    .contenedor footer footer h3 {
-      font-size: 1.2rem; }
+    .contenedor footer h2 {
+      font-size: 1.8rem; }
     .contenedor footer a {
       text-decoration: none;
       color: black; }
@@ -143,7 +143,11 @@ body {
 .contenedor-hombres {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /*estilos del encabezado*/
+  /*estilos del main*/
+  /*estilos del pie de pagina*/
+  /*estilos del footer*/ }
   .contenedor-hombres header {
     grid-area: header;
     background-color: #cac2a8;
@@ -167,6 +171,13 @@ body {
     background-color: #d8cabc;
     display: flex;
     flex-direction: column; }
+    .contenedor-hombres .main-hombres h1 {
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 2.5rem; }
     .contenedor-hombres .main-hombres .contenedor-cartas {
       display: flex;
       flex-wrap: wrap;
@@ -216,20 +227,21 @@ body {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     font-size: 0.8rem;
-    font-family: 'Roboto', sans-serif; }
-    .contenedor-hombres footer footer h3 {
-      font-size: 1.2rem; }
+    font-family: 'Roboto', sans-serif;
+    width: 100vw; }
     .contenedor-hombres footer .navegacionFooter {
       margin-top: 0.5rem; }
     .contenedor-hombres footer .redesSociales {
       margin-top: 1rem; }
     .contenedor-hombres footer .contacto {
       margin-bottom: 0.5rem; }
+    .contenedor-hombres footer h2 {
+      font-size: 1.8rem; }
     .contenedor-hombres footer a {
       text-decoration: none;
       color: black; }
@@ -297,6 +309,13 @@ body {
     grid-area: main-productos;
     background-color: #dcd8cb;
     width: 100vw; }
+    .contenedor-productos .main-productos h1 {
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 2.5rem; }
     .contenedor-productos .main-productos .contenedor-carrusel {
       height: 100vh;
       width: 100vw; }
@@ -362,20 +381,21 @@ footer {
   background-color: #cac2a8;
   height: 150px;
   text-align: center;
-  display: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
   font-size: 0.8rem;
-  font-family: 'Roboto', sans-serif; }
-  footer footer h3 {
-    font-size: 1.2rem; }
+  font-family: 'Roboto', sans-serif;
+  width: 100vw; }
   footer .navegacionFooter {
     margin-top: 0.5rem; }
   footer .redesSociales {
     margin-top: 1rem; }
   footer .contacto {
     margin-bottom: 0.5rem; }
+  footer h2 {
+    font-size: 1.8rem; }
   footer a {
     text-decoration: none;
     color: black; }
@@ -385,7 +405,10 @@ footer {
     list-style: none; }
 
 .contenedor-contacto {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /*estilos del encabezado*/
+  /*estilos del main*/
+  /*estilos del pie de pagina*/ }
   .contenedor-contacto header {
     grid-area: header;
     background-color: #cac2a8;
@@ -411,6 +434,8 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #d8cabc; }
+    .contenedor-contacto .main-contacto h1 {
+      font-size: 1.8rem; }
     .contenedor-contacto .main-contacto .form-contacto {
       width: 30em;
       height: 20em;
@@ -435,20 +460,21 @@ footer {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     font-size: 0.8rem;
-    font-family: 'Roboto', sans-serif; }
-    .contenedor-contacto footer footer h3 {
-      font-size: 1.2rem; }
+    font-family: 'Roboto', sans-serif;
+    width: 100vw; }
     .contenedor-contacto footer .navegacionFooter {
       margin-top: 0.5rem; }
     .contenedor-contacto footer .redesSociales {
       margin-top: 1rem; }
     .contenedor-contacto footer .contacto {
       margin-bottom: 0.5rem; }
+    .contenedor-contacto footer h2 {
+      font-size: 1.8rem; }
     .contenedor-contacto footer a {
       text-decoration: none;
       color: black; }
@@ -458,15 +484,19 @@ footer {
       list-style: none; }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
+  /*esrilos de contenedor*/
   .contenedor {
     display: grid;
-    grid-template-areas: "header  header header header" "main-index  main-index main-index main-index" "section section  section section" "section-dos section-dos section-dos seection-dos   " "footer footer footer footer"; }
+    grid-template-areas: "header  header header header" "main-index  main-index main-index main-index" "section section  section section" "section-dos section-dos section-dos seection-dos   " "footer footer footer footer";
+    /*pie de pagina*/ }
     .contenedor footer {
       display: none; }
   header {
     flex-direction: column; }
+  /*estilo de section*/
   .section-dos {
     width: 100vw; }
+  /*estilo de contenedores*/
   .contenedor-hombres {
     display: grid;
     grid-template-areas: "header  header header header" "main-hombres  main-hombres main-hombres main-hombres" "footer footer footer footer"; }
@@ -482,8 +512,10 @@ footer {
     height: 200px; } }
 
 @media screen and (min-width: 960px) {
+  /*estilos del pie de pagina*/
   footer {
     display: flex; }
+  /*estilo de los contenedores*/
   .contenedor-contacto footer {
     display: flex; }
   .contenedor-hombres footer {
@@ -492,16 +524,18 @@ footer {
     padding: 2rem;
     width: auto;
     margin: 0rem 0rem 0rem 6rem; }
-  .section-productos {
-    display: flex; }
   .contenedor {
     display: grid;
     grid-template-areas: "header  header header header" "main-index  main-index main-index main-index" "section section  section-dos section-dos" "footer footer footer footer"; }
     .contenedor .estilo-botones {
       font-size: 1;
-      border-radius: 10%; } }
+      border-radius: 10%; }
+  /*estilos de section*/
+  .section-productos {
+    display: flex; } }
 
 @media screen and (min-width: 600px) and (max-width: 960px) {
+  /*estilos de contenedor*/
   .contenedor {
     display: grid;
     grid-template-areas: "header  header header header" "main-index  main-index main-index main-index" "section section  section-dos section-dos" "footer footer footer footer"; }
@@ -509,5 +543,6 @@ footer {
       display: none; }
   .contenedor-hombres footer {
     display: none; }
+  /*estilos de encabezado*/
   header {
     flex-direction: column; } }

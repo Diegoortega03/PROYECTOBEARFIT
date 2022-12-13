@@ -43,6 +43,18 @@
     
 
     .main-productos{
+
+        h1{
+            
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2.5rem; 
+            }
+
+            
         grid-area: main-productos;
         background-color: $color-secundario;
         width: 100vw;
@@ -170,31 +182,37 @@
         background-color: #cac2a8;
         height: 150px;
         text-align: center;
-        display: none;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 20px;
         font-size: 0.8rem;
         font-family: 'Roboto', sans-serif;
-        
-        
+        width: 100vw;
     
-        footer h3{
-            font-size: 1.2rem;
-        }
-        
+    
         .navegacionFooter{
             margin-top: 0.5rem;
     
         }
     
         .redesSociales{
-            margin-top:1rem; }
+            margin-top:1rem; 
+            
+        }
             
     
         .contacto{
             margin-bottom: 0.5rem;
         }
+        
+        
+    
+        h2{
+            font-size: 1.8rem;
+        }
+     
+    
     
     
         a{
@@ -213,6 +231,10 @@
         
     
     }
+        
+        
+    
+    
     
 
         

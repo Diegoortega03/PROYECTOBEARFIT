@@ -1,4 +1,6 @@
 @media screen and (min-width:600px) and (max-width:960px){
+
+    /*estilos de contenedor*/
     .contenedor{
     
         display: grid;
@@ -21,6 +23,8 @@
 
     }
 
+
+    /*estilos de encabezado*/
     header{
     flex-direction: column;
     }
