@@ -117,7 +117,7 @@ body {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -227,7 +227,7 @@ body {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -381,7 +381,7 @@ footer {
   background-color: #cac2a8;
   height: 150px;
   text-align: center;
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
@@ -460,7 +460,7 @@ footer {
     background-color: #cac2a8;
     height: 150px;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
